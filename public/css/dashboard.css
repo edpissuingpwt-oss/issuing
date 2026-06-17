@@ -1,0 +1,232 @@
+/* ===============================
+   MODERN STAT CARD
+================================= */
+.modern-stat {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    min-height: 170px;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transition: all .3s ease;
+    margin-bottom: 1rem;
+}
+
+.modern-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.modern-stat .inner {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modern-stat .stats h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.modern-stat .stats p {
+    margin: 6px 0 0;
+    font-size: .95rem;
+    opacity: .9;
+    color: #fff;
+    font-weight: 500;
+}
+
+.modern-stat .icon {
+    opacity: 0.18;
+    transition: all .3s ease;
+}
+
+.modern-stat:hover .icon {
+    transform: scale(1.08);
+    opacity: 0.25;
+}
+
+.modern-stat .icon img {
+    max-width: 90px;
+    height: auto;
+}
+
+.modern-stat-footer {
+    display: block;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.12);
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    transition: background .3s ease;
+}
+
+.modern-stat-footer:hover {
+    background: rgba(0,0,0,0.22);
+}
+
+/* ===============================
+   COLOR VARIANT
+================================= */
+.modern-stat.blue {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.modern-stat.green {
+    background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.modern-stat.red {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+/* ===============================
+   DARK MODE
+================================= */
+[data-theme="dark"] .modern-stat,
+.dark-mode .modern-stat,
+body.dark .modern-stat {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .modern-stat-footer,
+.dark-mode .modern-stat-footer,
+body.dark .modern-stat-footer {
+    background: rgba(255,255,255,0.08);
+}
+.tanggal-live {
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    gap: 2px;
+}
+
+[data-theme="dark"] .tanggal-live {
+    color: #f1f1f1 !important;
+}
+.small-box { border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s; }
+.small-box:hover { transform: translateY(-4px); }
+.nav-pills .nav-link {
+    border-radius: 20px;
+    margin-right: 8px;
+    color: #fff !important;
+    transition: all 0.2s ease;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:focus {
+    color: #fff !important;
+}
+
+.nav-pills .nav-link.active {
+    color: #fff !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ===== Light Mode ===== */
+.nav-pills .nav-link {
+    background: rgba(255,255,255,0.12);
+}
+
+/* ===== Dark Mode ===== */
+[data-bs-theme="dark"] .nav-pills .nav-link,
+[data-theme="dark"] .nav-pills .nav-link,
+.dark-mode .nav-pills .nav-link,
+body.dark .nav-pills .nav-link {
+    background: rgba(255,255,255,0.08);
+    color: #fff !important;
+}
+
+[data-bs-theme="dark"] .nav-pills .nav-link.active,
+[data-theme="dark"] .nav-pills .nav-link.active,
+.dark-mode .nav-pills .nav-link.active,
+body.dark .nav-pills .nav-link.active {
+    background: linear-gradient(135deg, #334155, #1e293b);
+    color: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+.card-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-bottom: none;
+    color: #fff;
+}
+
+/* Pastikan semua text di dalam header ikut putih */
+.card-header,
+.card-header h1,
+.card-header h2,
+.card-header h3,
+.card-header h4,
+.card-header h5,
+.card-header h6,
+.card-header span,
+.card-header small,
+.card-header .btn,
+.card-header .nav-link {
+    color: #fff !important;
+}
+
+/* Dark mode */
+[data-theme="dark"] .card-header,
+.dark-mode .card-header,
+body.dark .card-header {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: #fff;
+}
+.card-header .nav-link { color: rgba(255,255,255,0.8); border: none; }
+.card-header .nav-link.active { color: white; background: rgb(47, 0, 255); border-radius: 20px 20px 0 0; }
+.progress { border-radius: 10px; background-color: #e9ecef; }
+.progress-bar { border-radius: 10px; }
+.badge-pill { font-weight: 600; min-width: 70px; }
+
+/* Refresh button animation */
+.refresh-btn {
+    transition: all 0.3s ease;
+}
+.refresh-btn:hover {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-color: transparent;
+}
+.refresh-btn i {
+    transition: transform 0.3s ease;
+}
+.refresh-btn.loading i {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+/* Progress Bar Custom */
+.progress-custom {
+    height: 8px;
+    width: 100px;
+    display: inline-block;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.progress-bar-custom {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+/* Warna berdasarkan level */
+.progress-bar-red {
+    background-color: #dc3545 !important;  /* Merah */
+}
+.progress-bar-orange {
+    background-color: #fd7e14 !important;  /* Orange */
+}
+.progress-bar-yellow {
+    background-color: #ffc107 !important;  /* Kuning */
+}
+.progress-bar-green {
+    background-color: #28a745 !important;  /* Hijau */
+}
+

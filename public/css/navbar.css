@@ -1,0 +1,61 @@
+.app-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #0f172a;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-link {
+  color: #e2e8f0;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.custom-dropdown {
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.mega-menu {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  min-width: 500px;
+}
+
+.mega-title {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.dropdown-item {
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.dropdown-item:hover {
+  background: #1e293b;
+}
+
+.active {
+  background: #334155;
+}
